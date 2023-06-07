@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;;
+    box-sizing: border-box;
+}
+body
+{
+    /* background: url(images/image1.jpg) no-repeat; */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: rgba(0, 0, 0, 0.02);
+    
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    /* color: #fff; */
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+nav a{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav li a:hover{
+    color: #9E7F62;
+    transition: all 0.4s ease 0s;
+}
+.slide-1{
+    background: url(images/img1.jpg);
+}
+.slide-2{
+    background: url(images/img3.jpg);
+}
+.slide-4{
+    background: url(images/img4.jpg);
+}
+.slide-5{
+    background: url(images/img5.jpg);
+}
+.slide-6{
+    background: url(images/img6.jpg);
+}
+.slide-7{
+    background: url(images/img9.jpg);
+}
+.slide{
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+.caption{
+    background: rgba(0, 0, 0, 0.02);
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 0px;   
+}
+.caption h3{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    padding: 18px;
+}
+.caption p{
+    max-width: 600px;
+    width: 90%;
+    margin: 0px auto;
+    color: #ccc;
+    text-align: center;
+    font-size: 18px;
+}
+.con{
+    position: relative;
+    /* background: rgba(0, 0, 0, .2); */
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    /* background: rgba(0, 0, 0, .1); */
+    border-radius: 50%;
+    transform: background 500ms;
+}
+.arrow img{
+    width: 100px;
+    /* margin-top: 100vh; */
+}
+/* .arrow:hover{
+    background: rgba(0, 0, 0, .4);
+} */
+.l{
+    left: 0;
+    /* transform: translateX(-100%); */
+}
+.arrow .r{
+    /* right: 0; */
+    transform: translateX(1260%);
+}
+.card{
+    margin-top: 100px;
+    width: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 200px;
+    box-shadow: 5px 5px 20px black;
+}
+.card .Manali{
+    /* height: 500px; */
+    width: 65%;
+    margin-top: 100px;
+    margin: 50px;
+    /* box-shadow: 5px 5px 20px black; */
+    overflow: hidden;
+    border-radius: 3px;
+
+}
+.card .Mumbai{
+    /* height: 500px; */
+    width: 20%;
+    margin-top: 100px;
+
+}
+.card .Coorg{
+    /* height: 500px; */
+    width: 78%;
+    margin-top: 100px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 3px;
+   
+
+}
+.card .Udaipur{
+    /* height: 500px; */
+    width: 72%;
+    margin-top: 100px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 3px;
+    
+
+}
+.card .Andaman{
+    /* height: 500px; */
+    width: 20%;
+    
+
+}
+.card .Leh{
+    /* height: 500px; */
+    width: 50%;
+}
+.containerr{
+    display: flex;
+    
+}
+.intro{
+    /* margin-top: 200px; */
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5px;
+    /* background:rgba(27, 27, 27, .5); */
+    color: white;
+    
+    /* margin-top: 200px; */
+}
+.intro-1{
+    margin-top: 250px;
+}
+.intro-1 h3{
+    margin-left: 140px;
+    font-size: 30px;
+    width: 30%;
+    background:rgba(27, 27, 27, .5);
+}
+.intro-1 p{
+    margin: 10px;
+    font-size: 17px;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro-1{
+    height: 220px;
+    bottom: 240px;
+    /* background: rgba(27, 27, 27, .5); */
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+    background:rgba(27, 27, 27, .5);
+
+}
+.card:hover img{
+    transform: scale(1,1) rotate(.3deg);
+    background:rgba(27, 27, 27, .5);
+}
+/* .wrapper{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #fff;
+} */
+/* .bgimg{
+    background-image: url(../WT/images/water.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+img{
+    width: 35px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+} */
+.showcase{
+   position: relative;
+   right: 0;
+   padding: 0;
+   min-height: 100vh;   
+   /* padding: 100px; */
+   display: contents;
+   justify-content: space-between;
+   background: #111;
+   color: #fff;
+   z-index: 2;
+}
+.showcase header{
+    position: inherit;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+}
+.showcase header nav li a{
+    color: white;
+}
+.showcase header .logo a{
+    /* font-size: 16px; */
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.showcase header nav li a:hover{
+    color: #ccc;
+    transition: all 0.4s ease 0s;
+}
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.9; */
+}
+.showcase .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+}
+.showcase .overlay .text .form-box{
+    width:380px;
+	height:540px;
+	position:relative;
+    margin-top: 50px;
+	margin:6% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+}
+.showcase .overlay .text .button-box{
+    width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #646363;
+    border-radius: 30px;
+}
+.showcase .overlay .text .toggle-button{
+    padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+    color: white;
+    place-content: white;
+}
+.showcase .overlay .text #btn{
+    top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #54b8f5;
+	border-radius: 30px;
+	transition: .5s;
+}
+.showcase .overlay .text .input-group-login{
+    top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+    color: white;
+}
+.showcase .overlay .text .input-group-register{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.showcase .overlay .text .input-field{
+    width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid white;
+	outline:none;
+	background: transparent;
+}
+.showcase .overlay .text .submit-btn{
+    width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #54b8f5;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.showcase .overlay .text .check-box{
+    margin: 30px 10px 34px 0;
+}
+.showcase .overlay .text span{
+    color:white;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+.showcase .overlay .text #login{
+    left:50px;
+
+}
+.showcase .overlay .text #login input{
+    color:white;
+	font-size:15;
+}
+.showcase .overlay .text #register{
+    left:450px;
+
+}
+.showcase .overlay .text #register input{
+    color:white;
+    font-size:15;
+}
+.showcase .overlay .text .toggle-btn{
+    padding:10px;
+    padding-left: 40px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+::placeholder{
+    color: white;
+}
+
+.showcase .overlay .text .form-box .hello{
+    margin-top: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+	font-size:25;
+    
+}
